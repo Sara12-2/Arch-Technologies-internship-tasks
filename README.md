@@ -1,66 +1,52 @@
-📧 Email/SMS Spam Classifier
-An interactive and lightweight machine learning web application that classifies any given email or SMS message as SPAM or NOT SPAM in real time.
+# 📧 Email/SMS Spam Classifier
 
-📍 Developed during my internship at Arch Technologies.
+> **Internship Task — Arch Technologies**
 
-🚀 Project Overview
-This project showcases how machine learning can be effectively used to filter out spam content from messages using natural language processing techniques. It provides a clean and responsive web-based interface for end users to interact with the model.
+An interactive machine learning web app that classifies a given email or SMS message as **SPAM** or **NOT SPAM** in real-time — built with 💙 using Python, Streamlit, and scikit-learn.
 
-🧾 The model is trained on the popular UCI SMS Spam Collection dataset, which contains 5,574 real-world labeled messages.
+---
 
-✨ Key Features
-Real-time spam prediction via a simple text input
+## 🚀 Project Overview
 
-User-friendly interface built with Streamlit
+This project demonstrates how to build and deploy a **spam detection system** using machine learning and natural language processing (NLP). The model is trained on the well-known [UCI SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection), and the user interface is built with **Streamlit** for simplicity and speed.
 
-Fast predictions with a pre-trained ML model
+---
 
-Lightweight, portable, and easy to use
+## 🧠 How It Works
 
-🧠 How It Works
-Text Preprocessing
-Input text is vectorized using TF-IDF (Term Frequency-Inverse Document Frequency) to convert messages into numerical format.
+📌 **Step-by-step Process:**
 
-Model Training
-A classifier (such as Multinomial Naive Bayes or Logistic Regression) is trained to distinguish between spam and ham messages.
+1. 🧹 **Preprocessing**  
+   Input text is cleaned and transformed using **TF-IDF Vectorization** to convert it into a numerical form.
 
-Prediction
-The trained model predicts whether the input is spam based on its learned patterns.
+2. 🧠 **Model Training**  
+   A machine learning model (e.g., **Multinomial Naive Bayes**) is trained on thousands of spam and ham messages.
 
-Streamlit UI
-The app provides an instant classification result (with emoji-based feedback) once the message is submitted.
+3. 💻 **Web Interface**  
+   The user enters a message → clicks the **Check Spam** button → gets an instant prediction with visual feedback.
 
-💻 Tech Stack
-Tool/Library	Description
-Python	Core programming language
-scikit-learn	Machine learning model + preprocessing
-Streamlit	Frontend web interface
-Joblib	Model saving/loading utility
-UCI Dataset	Real-world SMS spam dataset
+---
 
-🧪 Sample Predictions
-Sample Message	Prediction
-“Congratulations! You've won a free iPhone!”	SPAM
-“Hey, are we still on for the meeting tomorrow?”	NOT SPAM
-“You've been selected for a cash reward! Click now”	SPAM
-“Don’t forget to pick up groceries on your way!”	NOT SPAM
+## 💻 Tech Stack
 
-🔧 Installation & Usage
-📦 Install Dependencies
-bash
-Copy
-Edit
-pip install streamlit scikit-learn joblib
-▶️ Run the App
-bash
-Copy
-Edit
-streamlit run streamlit_app.py
-🙌 Acknowledgements
-This project was completed as part of my internship at Arch Technologies.
-It helped me ato enhance my skills.
+| 🔧 Tool           | 🧾 Description                                  |
+|------------------|------------------------------------------------|
+| `Python`         | Core language used for development             |
+| `scikit-learn`   | Machine learning library for model training    |
+| `Streamlit`      | Web-based GUI framework                        |
+| `Joblib`         | For saving and loading the trained model       |
+| `UCI Dataset`    | Public dataset with labeled spam/ham messages  |
 
-✍️ Author
-[sara manzoor]
-Machine learning Intern
+---
+
+## ✉️ Sample Message Predictions
+
+| Message                                               | Prediction  |
+|-------------------------------------------------------|-------------|
+| "Congratulations! You’ve won a free cruise!"          | 🚨 SPAM     |
+| "Hi, are you free this weekend to catch up?"          | ✅ NOT SPAM |
+| "Urgent! Your account is at risk. Click the link now" | 🚨 SPAM     |
+| "Reminder: Your appointment is at 4:30 PM tomorrow."  | ✅ NOT SPAM |
+
+---
 
