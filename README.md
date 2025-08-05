@@ -1,4 +1,4 @@
-# 🧠 AI Projects — Arch Technologies Internship
+# 🧠 ML Projects — Arch Technologies Internship
 
 This repository contains two interactive machine learning applications built during the **Arch Technologies Internship**:
 
